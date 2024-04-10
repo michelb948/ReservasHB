@@ -1,0 +1,13 @@
+.botoes {
+    display: flex;
+    flex-direction: row;
+    color: lightgreen;
+}
+
+.table {
+    border: 1px black solid;
+}
+
+.table tr th {
+    border: 1px black solid;
+}
