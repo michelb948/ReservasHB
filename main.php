@@ -7,10 +7,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <?php
+        include_once "controllerDelete.php";
+    ?>
+
     <div class="botoes">
         <button type="click" onclick="location.href='reservar.php'">Reservar</button>
         <button>Editar</button>
-        <button>Excluir</button>
     </div>
 
     <table class="table">
