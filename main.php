@@ -1,3 +1,12 @@
+<?php
+require "conn.php";
+session_start();
+if(!isset($_SESSION['cpf']) == true) {
+    unset($_SESSION['cpf']);
+    header("location: index.php?msg='sessão não iniciada, fala com os cara!'");
+}
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -25,5 +34,23 @@
             <th>Dia</th>
         </tr>
     </table>
+
+    <?php
+    require "conn.php";
+
+    $sql = "SELECT * FROM reservas";
+
+    $result = $conn->query($sql);
+
+    while ($user_data = mysqli_fetch_assoc($result)) {
+        echo "<tr>";
+        echo "<td>" . $user_data['nome']. "</td>";
+        echo "<td>" . $user_data['equipamento']. "</td>";
+        echo "<td>" . $user_data['id_equipamento']. "</td>";
+        echo "<td>" . $user_data['aulas']. "</td>";
+        echo "<td>" . $user_data['dia']. "</td>";
+        echo "</tr>";
+    }
+    ?>
 </body>
 </html>
