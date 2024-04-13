@@ -33,10 +33,10 @@ if(!isset($_SESSION['cpf']) == true) {
             <th>Aula</th>
             <th>Dia</th>
         </tr>
-    </table>
+    
 
     <?php
-    require "conn.php";
+    include_once("conn.php");
 
     $sql = "SELECT * FROM reservas";
 
@@ -52,5 +52,7 @@ if(!isset($_SESSION['cpf']) == true) {
         echo "</tr>";
     }
     ?>
+    
+    </table>
 </body>
 </html>
