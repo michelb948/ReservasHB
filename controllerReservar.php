@@ -9,7 +9,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     $aulas = $_POST['aulas'];
     $dias = $_POST['dia'];
 
-    $query = "INSERT INTO reservas (0, nome, equipamento, id_equipamento, aulas, dias) VALUES ($nome, $equipamento, $id_equipamento, $aulas, $dias)";
+    $query = "INSERT INTO reservas (nome, equipamento, id_equipamento, aulas, dia) VALUES ('$nome', '$equipamento', '$id_equipamento', '$aulas', '$dias')";
 
     $result = $conn->query($query);
 

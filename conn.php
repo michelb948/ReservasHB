@@ -1,6 +1,6 @@
 <?php    
     $host = "localhost";
-    $dbname = "reserva";
+    $dbname = "reservahb";
     $dbusername = "root";
     $dbpassword = "";
 
@@ -9,3 +9,4 @@
     if ($conn->connect_error) {
         die("Conexão falhou :(, algo de errado não está certo: " . $conn->connect_error);
     }
+    
