@@ -34,6 +34,7 @@
             <th>Nº do equipamento</th>
             <th>Aula</th>
             <th>Dia</th>
+            <th></th>
         </tr>
     
 
