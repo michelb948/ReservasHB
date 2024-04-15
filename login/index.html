@@ -11,12 +11,12 @@
     <div class = "container">    
     </div>
     <div class="page">
-        <form method="POST" class="formLogin">
+        <form action="validation.php" method="POST" class="formLogin">
             <h1>Login</h1>
             <p>Digite os seus dados de acesso no campo abaixo.</p>
-            <label for="cpf">E-mail</label>
-            <input type="cpf" placeholder="Digite seu CPF" autofocus="true" />
-            <input type="submit" value="Acessar" class="btn"/>
+            <label for="cpf">CPF:</label>
+            <input type="text" name="cpf" placeholder="Digite seu CPF" autofocus="true" required />
+            <input type="submit" name="acessar" value="Acessar" class="btn"/>
         </form>
     </div>
     <a href="/reserva/reserva.php"> site reserva</a>

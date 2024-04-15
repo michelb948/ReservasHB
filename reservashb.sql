@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3307
--- Tempo de geração: 15/04/2024 às 02:28
+-- Tempo de geração: 15/04/2024 às 03:38
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.2.12
 
@@ -38,16 +38,16 @@ CREATE TABLE `professores` (
 --
 
 INSERT INTO `professores` (`id`, `nome`, `cpf`) VALUES
-(1, 'Roberto Rivelino Cavalcante Rodrigues', '252.210.058-08'),
-(2, 'Francisco Adalcélio Borges Pimenta', '007.395.903-08'),
-(3, 'Aleks Roque Alexandre da Silva', '057.016.233-51'),
-(4, 'Lara Severo Vieira', '059.140.633-02'),
-(5, 'Kelly Lara do Nascimento Sousa', '026.718.903-62'),
-(6, 'Sara Ribeiro dos Santos', '026.073.293-10'),
-(7, 'Juan Erick Barbosa de Farias', '026.758.363-03'),
-(8, 'Matheus dos santos Albuquerque', '014.402.993-66'),
-(9, 'Napoleão Evangelista Pereira da Silva', '050.002.123-63'),
-(10, 'Lidiane Gondim Barros', '053.518.163-93');
+(1, 'Roberto Rivelino Cavalcante Rodrigues', '25221005808'),
+(2, 'Francisco Adalcélio Borges Pimenta', '00739590308'),
+(3, 'Aleks Roque Alexandre da Silva', '05701623351'),
+(4, 'Lara Severo Vieira', '05914063302'),
+(5, 'Kelly Lara do Nascimento Sousa', '02671890362'),
+(6, 'Sara Ribeiro dos Santos', '02607329310'),
+(7, 'Juan Erick Barbosa de Farias', '02675836303'),
+(8, 'Matheus dos santos Albuquerque', '01440299366'),
+(9, 'Napoleão Evangelista Pereira da Silva', '05000212363'),
+(10, 'Lidiane Gondim Barros', '05351816393');
 
 -- --------------------------------------------------------
 
