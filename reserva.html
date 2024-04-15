@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservar</title>
+    <link rel="stylesheet" href="reserv.css">
+</head>
+<body>
+    <div class = "container">    
+    </div>
+    <div class="page">
+        <form action="#.php" method="POST" class="formLogin"  onsubmit="return validarData()">
+            <h1>Requerimento de Equipamentos</h1>
+            <p>Selecione abaixo as aulas desejadas:</p>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <input type="checkbox" id="aula1" name="aula[]" value="Aula 1">
+                    <label for="aula1">Aula 1</label>
+                </div>
+                <div class="grid-item">
+                    <input type="checkbox" id="aula2" name="aula[]" value="Aula 2">
+                    <label for="aula2">Aula 2</label>
+                </div>
+                <div class="grid-item">
+                    <input type="checkbox" id="aula3" name="aula[]" value="Aula 3">
+                    <label for="aula3">Aula 3</label>
+                </div>
+                <div class="grid-item">
+                    <input type="checkbox" id="aula4" name="aula[]" value="Aula 4">
+                    <label for="aula4">Aula 4</label>
+                </div>
+                <div class="grid-item">
+                    <input type="checkbox" id="aula5" name="aula[]" value="Aula 5">
+                    <label for="aula5">Aula 5</label>
+                </div>
+                <div class="grid-item">
+                    <input type="checkbox" id="aula6" name="aula[]" value="Aula 6">
+                    <label for="aula6">Aula 6</label>
+                </div>
+                <div class="grid-item">
+                    <input type="checkbox" id="aula7" name="aula[]" value="Aula 7">
+                    <label for="aula7">Aula 7</label>
+                </div>
+                <div class="grid-item">
+                    <input type="checkbox" id="aula8" name="aula[]" value="Aula 8">
+                    <label for="aula8">Aula 8</label>
+                </div>
+                <div class="grid-item">
+                    <input type="checkbox" id="aula9" name="aula[]" value="Aula 9">
+                    <label for="aula9">Aula 9</label>
+                </div>
+            
+            </div>
+            <hr>
+            <label for="cpf">Equipamento: </label>
+            <input type="text" name="equipamento" placeholder="Qual seu equipamento" autofocus="true" required />
+            <label for="numeroEquipamento">Número do equipamento:</label>
+            <input type="number" id="numeroEquipamento" name="numeroEquipamento" placeholder="Número do equipamento" min="1" max="10" required>
+            <hr>
+            <label for="data">Selecione a data:</label>
+            <input type="date" id="data" name="data" required>
+            <input type="submit" name="submit" value="Enviar" class="btn">
+        </form>
+    </div>
+    <script src="reserv.js"></script>
+</body>
+</html>
